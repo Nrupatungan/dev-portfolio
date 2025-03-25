@@ -4,7 +4,7 @@ import { HeroSection } from "@/sections/Hero";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
       <Header />
       <HeroSection />
     </div>
