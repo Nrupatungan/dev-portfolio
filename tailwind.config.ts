@@ -27,6 +27,12 @@ const config: Config = {
     extend: {
     },
   },
+  variants: {
+    extend: {
+      outline: ['after'],
+      outlineOffset: ['after'],
+    },
+  },
   plugins: [],
 };
 export default config;
