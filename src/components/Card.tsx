@@ -6,7 +6,7 @@ const Card = ({ children, className }: { children: ReactNode; className?: string
   return (
     <div
       className={twMerge(
-        "bg-gray-800 rounded-3xl overflow-hidden z-0 relative p-6",
+        "bg-gray-800 rounded-3xl overflow-hidden z-0 relative",
         className
       )}
     >
