@@ -1,7 +1,6 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
-import grainImage from '@/assets/images/grain.jpg'
 import CheckIcon from '@/assets/icons/check-circle.svg'
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 import Image from "next/image";
@@ -56,7 +55,9 @@ export const ProjectsSection = () => {
         
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, idx) => (
-            <Card key={idx} className="p-0 px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20">
+            <Card key={idx} className="p-0 px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20 sticky top-16" style={{
+              top: `calc(64px + ${idx * 50}px)`
+            }}>
 
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 

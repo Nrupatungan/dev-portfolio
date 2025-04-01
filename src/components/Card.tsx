@@ -1,14 +1,15 @@
 import grainImage from '@/assets/images/grain.jpg';
-import { ReactNode } from 'react';
+import { ComponentPropsWithoutRef, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-const Card = ({ children, className }: { children: ReactNode; className?: string }) => {
+const Card = ({ children, className, ...other}: ComponentPropsWithoutRef<'div'>) => {
   return (
     <div
       className={twMerge(
         "bg-gray-800 rounded-3xl overflow-hidden z-0 relative",
         className
       )}
+      {...other}
     >
       {/* Background Image */}
       <div
