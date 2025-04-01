@@ -47,10 +47,10 @@ export const TestimonialsSection = () => {
       <div className="container">
         <SectionHeader eyebrow='happy clients' title='What clients say about me' description="Don't just take my word for it. See what my clients have to say about my work." />
         
-        <div className="mt-16 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex flex-none gap-8">
+        <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
+          <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
             {[...testimonials,...testimonials].map((testimonial, idx) => (
-            <Card key={idx} className="p-6 md:p-8 max-w-xs md:max-w-md">
+            <Card key={idx} className="p-6 md:p-8 max-w-xs md:max-w-md hover:-rotate-3 transition duration-300">
 
               <div className="flex gap-4">
                 <div className="size-14 bg-gray-700 rounded-full inline-flex items-center justify-center flex-shrink-0">
